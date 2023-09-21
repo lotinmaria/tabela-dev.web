@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        .layout {
+            display: grid;
+            grid-template-columns: 2fr 3fr 2fr;
+        }
+
+        table {
+            grid-column: 2;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main class="layout">
+        <table>
+            <tr>
+                <th style="width: 20%;"></th>
+                <th>SEG</th>
+                <th>TER</th>
+                <th>QUA</th>
+                <th>QUI</th>
+                <th>SEX</th>
+            </tr>
+            <tr>
+                <th>AULA 1M</th>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <th>AULA 2M</th>
+                <td rowspan="2" id="hist">História <br> Ivan Furmann <br> E205</td>
+                <td rowspan="2" id="math">Matemática <br> Vanessa Neves <br> E205</td>
+                <td rowspan="2" id="prg">Programação <br> Fábio Moura <br> B3</td>
+                <td rowspan="2" id="arte">Artes <br> Alessandra <br> Sala_Artes</td>
+                <td rowspan="2" id="geo">Geografia <br> Luiz Antônio <br> E205</td>
+            </tr>
+            <tr>
+                <th>AULA 3M</th>
+            </tr>
+            <tr>
+                <th>Intervalo M</th>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <th>AULA 4M</th>
+                <td rowspan="2" id="port">Língua Prtuguesa <br> Patricia Massarute <br> E205</td>
+                <td rowspan="2" id="quimi">Química<br> Renata H. <br> E205</td>
+                <td rowspan="2" id="fis">Física <br> Marcelo Salvador <br> E206</td>
+                <td rowspan="2" id="dev">Desenvolvimeto Web <br> Orlando <br> B3</td>
+                <td rowspan="2" id="bio">Biologia <br> Héder <br> E205</td>
+            </tr>
+            <tr>
+                <th>AULA 5M</th>
+            </tr>
+            <tr>
+                <th>AULA 6M</th>
+                <td>---</td>
+                <td id="port">Língua Prtuguesa <br> Patricia Massarute <br> E205</td>
+                <td>---</td>
+                <td id="dev">Desenvolvimeto Web <br> Orlando <br> B3</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <th>Almosso</th>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <th>AULA 1V</th>
+                <td>---</td>
+                <td>---</td>
+                <td id="math">Matemática <br> Vanessa Neves <br> E205</td>
+                <td>---</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <th>AULA 2V</th>
+                <td>---</td>
+                <td rowspan="2">
+                    <table>
+                        <tr>
+                            <td>1INFO1A </td>
+                            <td>1INFO1B, 1INFO2B, 1INFO3B </td>
+                            <td>1INFO1C, 1INFO2C, 1INFO3C</td>
+                        </tr>
+                        <tr>
+                            <td id="ing">CLIFC</td>
+                            <td id="top">Tóp. Ciênc. Hum. e Tecnol. </td>
+                            <td id="math">Matemática Básica (Optativa)</td>
+                        </tr>
+                        <tr>
+                            <td>---</td>
+                            <td>Roberto, Casemiro</td>
+                            <td>Jean</td>
+                        </tr>
+                        <tr>
+                            <td>---</td>
+                            <td>B3</td>
+                            <td>E206</td>
+                        </tr>
+                    </table>
+                </td>
+                <td rowspan="2" id="intro">Intr. Comp <br> Daniel Santos <br> A11</td>
+                <td>---</td>
+                <td rowspan="2" id="ed">Ed Fisica <br> Marcio souza <br> Ginásio</td>
+            </tr>
+            <tr>
+                <th>AULA 3V</th>
+                <td>---</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <th>Intervalo V</th>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <th>AULA 4V</th>
+                <td>---</td>
+                <td rowspan="2" id="ing">1INFO1A <br> CLIFC</td>
+                <td rowspan="2" id="pi">Projeto Integrador <br> Kennedy <br> A11</td>
+                <td>---</td>
+                <td rowspan="2" id="prg">Programação <br> Fábio Moura <br> B3</td>
+            </tr>
+            <tr>
+                <th>AULA 5V</th>
+                <td>---</td>
+                <td>---</td>
+            </tr>
+        </table>
+</body>
+
+</html>
